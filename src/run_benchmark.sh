@@ -6,9 +6,10 @@ LOG_FILE=log.txt
 cmd=./$BIN_NAME
 
 job_array=(
-      "memHold:1024:100,computePi:1000:100000"
+      "diskRanRead:10240:100000000"
        )
 
+#"memHold:1024:100,computePi:1000:100000"
 #"memHold:1024:100,computePi:10:1000"
 #"computePi:1000:100000"
 #"memRandomAccess:512:1000"

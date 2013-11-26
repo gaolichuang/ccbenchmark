@@ -10,6 +10,7 @@
 
 #include "function.h"
 #include "ccbenchmark.h"
+#include "ccbenchmark_disk.h"
 
 /*
    -t memRandomAccess:512:100000,XXX:X:X
@@ -27,6 +28,10 @@ benchmark_jobs_t jobs[] = {
     {"memRandomAccess", memRandomAccess},
     {"memHold", memHold},
     {"computePi", computePi},
+    {"diskRanRead", diskRanRead},
+    {"diskRanWrite", diskRanWrite},
+    {"diskSeqRead", diskSeqRead},
+    {"diskSeqWrite", diskSeqWrite},
 };
 
 
